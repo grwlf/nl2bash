@@ -192,8 +192,9 @@ def demo(buckets=None):
 
 def save_hyperparameters():
     model_subdir, decode_sig = graph_utils.get_decode_signature(FLAGS)
-    with open(os.path.join(FLAGS.model_root_dir, model_subdir, 'hyperparameters.pkl'), 'wb') as o_f:
-        pickle.dump(FLAGS, o_f)
+    print('Cant save hyperparameters currently, sorry')
+    # with open(os.path.join(FLAGS.model_root_dir, model_subdir, 'hyperparameters.pkl'), 'wb') as o_f:
+    #     pickle.dump(FLAGS, o_f)
 
 
 def gen_slot_filling_training_data(FLAGS, datasets):
